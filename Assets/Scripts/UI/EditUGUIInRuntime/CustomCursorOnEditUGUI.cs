@@ -42,28 +42,28 @@ namespace BaseToolsForUnity.UI
 			switch (editer.EditType)
 			{
 				//复原鼠标样式
-				case EditUGUIHelperType.NonEdit:
+				case EditUGUITriggerType.NonEdit:
 					cursorTemp = null;
 					break;
-				case EditUGUIHelperType.InsideForMoveTrigger:
+				case EditUGUITriggerType.InsideForMoveTrigger:
 					if (textureMove)
 					{
 						cursorTemp = textureMove;
 					}
 					break;
-				case EditUGUIHelperType.EdgeForResizeHorTrigger:
+				case EditUGUITriggerType.EdgeForResizeHorTrigger:
 					if (textureHor)
 					{
 						cursorTemp = textureHor;
 					}
 					break;
-				case EditUGUIHelperType.EdgeForResizeVerTrigger:
+				case EditUGUITriggerType.EdgeForResizeVerTrigger:
 					if (textureVer)
 					{
 						cursorTemp = textureVer;
 					}
 					break;
-				case EditUGUIHelperType.CrossForResizeHorAndVerTrigger:
+				case EditUGUITriggerType.CrossForResizeHorAndVerTrigger:
 					//是左下角和右上角吗
 					if (editer.HorizontalType == HorizontalType.Left && editer.VerticalType == VerticalType.Bottom || editer.HorizontalType == HorizontalType.Right && editer.VerticalType == VerticalType.Top)
 					{

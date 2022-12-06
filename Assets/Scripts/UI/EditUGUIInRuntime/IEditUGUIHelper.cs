@@ -14,7 +14,7 @@ namespace BaseToolsForUnity.UI
 	public interface IEditUGUIHelper
 	{
 		/// <summary>修改类型</summary>
-		EditUGUIHelperType EditType { get; set; }
+		EditUGUITriggerType EditType { get; set; }
 
 		/// <summary>水平方向处于目标的那一侧</summary>
 		HorizontalType HorizontalType { get; set; }
@@ -38,9 +38,9 @@ namespace BaseToolsForUnity.UI
 
 
 	/// <summary>
-	/// 编辑UGUI辅助UI类型
+	/// 用于检测用户行为的触发器类型
 	/// </summary>
-	public enum EditUGUIHelperType
+	public enum EditUGUITriggerType
 	{
 		/// <summary>
 		/// 不修改
