@@ -26,3 +26,4 @@
     <font color="orange">可以正常运行，就是不显示光标</font>
 - [ ] 实现PlanB，并测试其性能
 - [ ] 比较PlanB和PlanA的性能
+- [ ] 实现接口```ILimitUGUIInParentArea```，将当前UI限制在父UI内部，不允许出界。扩展细节：允许设置当前UI与父UI四周保持的最低间距
